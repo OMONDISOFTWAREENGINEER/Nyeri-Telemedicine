@@ -1,0 +1,98 @@
+/* src/pages/LandingPage.css */
+.landing-page {
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('https://picsum.photos/1920/1080?random=1');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-content {
+    padding: 120px 0;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.7), rgba(0, 0, 0, 0.7));
+  }
+  
+  /* Features Section */
+  .feature-card {
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .feature-icon {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  /* Services Section */
+  .service-card {
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content {
+      padding: 80px 0;
+    }
+    
+    .hero-section {
+      min-height: 70vh;
+    }
+  }
+  
+  /* Animation Classes */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
